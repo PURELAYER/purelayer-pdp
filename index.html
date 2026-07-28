@@ -128,7 +128,7 @@
       fiveStars=starSVG+starSVG+starSVG+starSVG+starSVG;
   document.querySelectorAll('#fv-stars, .rv-s').forEach(function(e){e.innerHTML=fiveStars});
   /* ===== Variant Map & Cart ===== */
-  var VM={'10ml':{price:'¥3,980',label:'10ml',items:[{id:53230989574512,quantity:1}]},'50ml':{price:'¥13,800',label:'50ml',items:[{id:53230989181296,quantity:1},{id:53231016182128,quantity:1}]},'100ml':{price:'¥22,800',label:'100ml',items:[{id:53230989214064,quantity:1},{id:53231016182128,quantity:1},{id:53230989541744,quantity:1}]}};
+  var VM={'10ml':{price:'¥3,980',label:'10ml',items:[{id:53230989574512,quantity:1}]},'50ml':{price:'¥14,800',label:'50ml',items:[{id:54079235883376,quantity:1},{id:53231016182128,quantity:1}]},'100ml':{price:'¥22,800',label:'100ml',items:[{id:53230989214064,quantity:1},{id:53231016182128,quantity:1},{id:53230989541744,quantity:1}]}};
   var curV='50ml',cP=document.getElementById('cta-price');
   function upd(v){curV=v;var d=VM[v];if(cP)cP.textContent=d.price}
   document.getElementById('vs').addEventListener('change',function(e){if(e.target.classList.contains('vr'))upd(e.target.value)});
